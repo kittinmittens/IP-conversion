@@ -1,0 +1,17 @@
+#Daniel.Peluso@securesetacademy.com
+###int to IP converter
+
+echo "Please type the int you wish to convert, followed by [Enter]:"
+
+read nm #take in int argument
+
+dec2ip(){ # Convert an IPv4 decimal IP value to an IPv4 IP.
+          declare -i a=$((~(-1<<8))) b=$1; #declaring a as an integer
+          set -- "$((b>>24&a))" "$((b>>16&a))" "$((b>>8&a))" "$((b&a))"; #doing math
+          local IFS=.; #seperating fields
+          echo "$*";
+        }
+
+a=$(dec2ip "$nm") #calling the function
+echo "$Integer converts to IP=$a" #display result
+
