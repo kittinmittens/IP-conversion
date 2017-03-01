@@ -1,5 +1,5 @@
 #!/bin/bash
-##Daniel.Peluso@securesetacademy.com
+##me@danielpeluso.com
 ###ip to int converter
 
 echo "Please type the ip address you wish to convert, followed by [Enter]:"
